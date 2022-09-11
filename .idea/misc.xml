@@ -7,10 +7,13 @@
         <entry key="..\:/Belajar/UGD3/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.2265" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2265" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/fragment_daerah.xml" value="0.25416666666666665" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/fragment_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/fragment_info.xml" value="0.25416666666666665" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/fragment_settings.xml" value="0.25416666666666665" />
+        <entry key="..\:/Belajar/UGD3/app/src/main/res/layout/rv_item_daerah.xml" value="0.1" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Belajar/UGD3/app/src/main/res/menu/home_menu.xml" value="0.18984375" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/menu/menu.xml" value="0.253125" />
         <entry key="..\:/Belajar/UGD3/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2265" />
       </map>

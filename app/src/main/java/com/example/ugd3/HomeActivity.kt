@@ -2,13 +2,15 @@ package com.example.ugd3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
 import androidx.fragment.app.Fragment
 import com.example.ugd3.fragment.DashboardFragment
 import com.example.ugd3.fragment.InfoFragment
 import com.example.ugd3.fragment.SettingsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     private val dashboardFragment = DashboardFragment()
     private val infoFragment = InfoFragment()
     private val settingsFragment = SettingsFragment()
@@ -17,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         replaceFragment(dashboardFragment)
+
+        changeFragment(DaerahFragment())
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
@@ -30,11 +34,26 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val menuInflater = MenuInflater(this)
+        menuInflater.inflate(R.menu.home_menu, menu)
+        return true
+    }
+
     private fun replaceFragment(fragment : Fragment) {
         if (fragment != null){
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+        }
+    }
+
+    fun changeFragment(fragment: Fragment?){
+        if(fragment != null) {
+            getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.layout_fragment, fragment)
+                .commit()
         }
     }
 }

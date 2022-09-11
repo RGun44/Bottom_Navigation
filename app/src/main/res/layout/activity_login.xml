@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textColor="@color/black"
         style="@style/TextAppearance.MaterialComponents.Headline4"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Username"
+            android:hint="@string/username"
             app:errorEnabled="true"
             app:startIconDrawable="@drawable/ic_baseline_person_24"
             android:layout_marginBottom="8dp" >
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Password"
+            android:hint="@string/password"
             app:errorEnabled="true"
             app:startIconDrawable="@drawable/ic_baseline_lock_24"
             app:helperText="Masukan password anda" >
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Register" />
+            android:text="@string/register" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
